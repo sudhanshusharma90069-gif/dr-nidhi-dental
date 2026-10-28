@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Nidhi Prabhakar (BDS) | Dental Surgeon - Usha Hospital, Ara</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            tealBrand: {
+              50: '#f0fdfa',
+              100: '#ccfbf1',
+              500: '#14b8a6',
+              600: '#0d9488',
+              700: '#0f766e',
+              800: '#115e59',
+              900: '#134e4a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-tealBrand-900 text-white text-xs sm:text-sm py-2.5 px-4">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-4">
+        <span class="flex items-center gap-1.5">
+          <i class="fa-solid fa-hospital text-teal-300"></i>
+          <strong>Usha Hospital, East of Katira Overbridge, Ara - 802301</strong>
+        </span>
+        <span class="hidden md:flex items-center gap-1.5 text-teal-100">
+          <i class="fa-regular fa-clock text-teal-300"></i>
+          Mon – Sat: 10:00 AM – 7:00 PM
+        </span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto">
+        <span class="hidden sm:inline-flex items-center gap-1.5 bg-tealBrand-800 px-3 py-0.5 rounded-full text-xs text-teal-200 border border-teal-700">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          OPD Hours: Mon–Sat (10 AM – 7 PM)
+        </span>
+        <a href="tel:9341591254" class="font-semibold hover:text-teal-200 flex items-center gap-1.5">
+          <i class="fa-solid fa-phone-volume text-teal-300"></i> +91 9341591254
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 py-3.5 flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-xl bg-tealBrand-600 text-white flex items-center justify-center text-xl shadow-sm">
+          <i class="fa-solid fa-tooth"></i>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight">Dr. Nidhi Prabhakar</span>
+            <span class="text-xs font-bold bg-teal-100 text-tealBrand-800 px-2 py-0.5 rounded-md">BDS</span>
+          </div>
+          <p class="text-xs text-slate-500 font-medium">
+            Dental Surgeon <span class="text-tealBrand-600">• Usha Hospital, Ara</span>
+          </p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-slate-600">
+        <a href="#home" class="hover:text-tealBrand-600 transition">Home</a>
+        <a href="#treatments" class="hover:text-tealBrand-600 transition">Treatments (9)</a>
+        <a href="#symptom-guide" class="hover:text-tealBrand-600 transition">Symptom Guide</a>
+        <a href="#doctor" class="hover:text-tealBrand-600 transition">Doctor Profile</a>
+        <a href="#contact" class="hover:text-tealBrand-600 transition">Timings & Address</a>
+      </nav>
+
+      <div class="flex items-center gap-2.5">
+        <button id="langToggleBtn" onclick="toggleHindiHighlight()" class="px-3 py-2 rounded-lg border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-language text-tealBrand-600"></i> हिंदी / EN
+        </button>
+        <a href="#appointment" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span>Book Appointment</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-br from-teal-50/70 via-white to-emerald-50/50 py-12 lg:py-16 border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-12 gap-10 items-center">
+      <!-- Left Content -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-teal-100/80 text-tealBrand-800 px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-semibold">
+          <span class="w-2 h-2 rounded-full bg-tealBrand-600"></span>
+          Trusted Dental Care at Usha Hospital, Ara
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 leading-tight">
+          Complete & Gentle Dental Care for a <span class="text-tealBrand-600">Healthy, Confident Smile</span>
+        </h1>
+
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          Consult <strong>Dr. Nidhi Prabhakar (Dental Surgeon, BDS)</strong> at <strong>Usha Hospital, East of Katira Overbridge, Ara</strong> for advanced, hygienic, and painless dental treatments—from Teeth Cleaning, Root Canal (RCT), Implants, and Braces to Smile Design and Trauma Care.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4 pt-1">
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-teal-50 text-tealBrand-600 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-user-doctor"></i>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">DENTAL SPECIALIST</p>
+              <p class="font-bold text-slate-900 text-sm">Dr. Nidhi Prabhakar (BDS)</p>
+            </div>
+          </div>
+
+          <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm flex items-center gap-3.5">
+            <div class="w-10 h-10 rounded-lg bg-teal-50 text-tealBrand-600 flex items-center justify-center text-lg">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase tracking-wider font-bold text-slate-400">HOSPITAL LOCATION</p>
+              <p class="font-bold text-slate-900 text-sm">Usha Hospital, Katira, Ara</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 pt-2">
+          <a href="#appointment" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl shadow-md transition flex items-center gap-2.5">
+            <i class="fa-brands fa-whatsapp text-xl"></i>
+            Book Appointment on WhatsApp
+          </a>
+          <a href="tel:9341591254" class="bg-white hover:bg-slate-50 text-slate-800 font-bold px-6 py-3.5 rounded-xl border border-slate-300 shadow-sm transition flex items-center gap-2">
+            <i class="fa-solid fa-phone text-tealBrand-600"></i>
+            Call: 9341591254
+          </a>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4 text-xs sm:text-sm text-slate-600 pt-1">
+          <span class="flex items-center gap-1.5">
+            <i class="fa-regular fa-calendar-check text-tealBrand-600"></i>
+            <strong>Monday to Saturday:</strong> 10:00 AM – 7:00 PM
+          </span>
+          <span class="text-slate-300">|</span>
+          <span class="flex items-center gap-1.5">
+            <i class="fa-solid fa-shield-heart text-tealBrand-600"></i>
+            100% Sterilized & Modern Dental Setup
+          </span>
+        </div>
+      </div>
+
+      <!-- Right Clinic Card -->
+      <div class="lg:col-span-5">
+        <div class="bg-white rounded-2xl border border-slate-200 shadow-xl p-6 sm:p-7 space-y-5">
+          <div class="flex items-center gap-4 border-b border-slate-100 pb-5">
+            <div class="relative">
+              <div class="w-16 h-16 rounded-2xl bg-tealBrand-600 text-white flex items-center justify-center text-2xl shadow-md">
+                <i class="fa-solid fa-user-doctor"></i>
+              </div>
+              <span class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-emerald-500 text-white text-xs flex items-center justify-center border-2 border-white">
+                <i class="fa-solid fa-check"></i>
+              </span>
+            </div>
+            <div>
+              <span class="text-[11px] font-bold uppercase tracking-wider bg-emerald-50 text-emerald-700 px-2.5 py-0.5 rounded-md border border-emerald-200">
+                DENTAL SURGEON • BDS
+              </span>
+              <h2 class="text-xl font-extrabold text-slate-900 mt-1">Dr. Nidhi Prabhakar</h2>
+              <p class="text-xs text-slate-500 font-medium">Usha Hospital, Ara (802301)</p>
+            </div>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-teal-50 text-tealBrand-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-solid fa-hospital-user"></i>
+              </div>
+              <div>
+                <p class="text-[11px] font-bold uppercase text-slate-400">HOSPITAL & ADDRESS</p>
+                <p class="font-bold text-slate-800">Usha Hospital</p>
+                <p class="text-slate-600 text-xs">East of Katira Overbridge, Ara, Bihar - 802301</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-regular fa-clock"></i>
+              </div>
+              <div>
+                <p class="text-[11px] font-bold uppercase text-slate-400">OPD CONSULTATION HOURS</p>
+                <p class="font-bold text-slate-800">Monday to Saturday</p>
+                <p class="text-tealBrand-600 font-semibold text-xs">10:00 AM to 7:00 PM</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3.5">
+              <div class="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <p class="text-[11px] font-bold uppercase text-slate-400">PHONE & WHATSAPP BOOKING</p>
+                <p class="font-extrabold text-slate-900 text-base">+91 9341591254</p>
+                <p class="text-emerald-600 text-xs font-medium">Instant Appointment Confirmation on WhatsApp</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2 border-t border-slate-100">
+            <p class="text-[11px] font-bold uppercase text-slate-400 mb-2.5">KEY DENTAL PROCEDURES AVAILABLE:</p>
+            <div class="flex flex-wrap gap-1.5 text-xs font-medium text-slate-700">
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">Scaling & Polishing</span>
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">RCT & Post Core</span>
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">Crown & Bridge</span>
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">Dental Implants</span>
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">Ortho Braces</span>
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">Smile Design</span>
+              <span class="bg-slate-100 px-2.5 py-1 rounded-md">Fracture Case</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/919341591254?text=Hello%20Dr.%20Nidhi%20Prabhakar%20(Usha%20Hospital%2C%20Ara)%2C%20I%20want%20to%20book%20a%20dental%20appointment." target="_blank" class="w-full bg-tealBrand-700 hover:bg-tealBrand-800 text-white font-bold py-3 px-4 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
+            <i class="fa-brands fa-whatsapp text-lg"></i>
+            Quick WhatsApp Message to 9341591254
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Treatments Section -->
+  <section id="treatments" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto space-y-3">
+      <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-tealBrand-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+        <i class="fa-solid fa-tooth"></i> AVAILABLE DENTAL TREATMENTS
+      </span>
+      <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">
+        Comprehensive Dental Care & Specialized Procedures
+      </h2>
+      <p class="text-slate-600 text-sm sm:text-base">
+        Select any treatment below to pre-fill your appointment request with Dr. Nidhi Prabhakar at Usha Hospital, Ara.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="flex flex-wrap justify-center gap-2 mt-8" id="treatmentFilters">
+      <button onclick="filterTreatments('all', this)" class="filter-btn active bg-tealBrand-600 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-bold shadow-sm transition">
+        All Treatments (9)
+      </button>
+      <button onclick="filterTreatments('cleaning', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition">
+        Cleaning & Filling
+      </button>
+      <button onclick="filterTreatments('restorative', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition">
+        RCT, Denture & Implants
+      </button>
+      <button onclick="filterTreatments('cosmetic', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition">
+        Braces & Smile Design
+      </button>
+      <button onclick="filterTreatments('surgery', this)" class="filter-btn bg-white text-slate-700 hover:bg-slate-100 border border-slate-200 px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition">
+        Extraction & Fracture Care
+      </button>
+    </div>
+
+    <!-- 9 Treatment Cards Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10" id="treatmentGrid">
+      <!-- 1. Scaling & Polishing -->
+      <div data-category="cleaning" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">GUM & HYGIENE CARE</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Scaling (Teeth Cleaning) & Polishing</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">स्केलिंग (दांतों की सफाई) और पॉलिशिंग</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Ultrasonic removal of stubborn plaque, calculus (tartar), and surface stains followed by smooth tooth polishing for healthy gums and fresh breath.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Removes Tartar & Plaque</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Stops Gum Bleeding</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Brighter & Smoother Teeth</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('1. Scaling (Teeth Cleaning) & Polishing')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 2. Restoration / Filling -->
+      <div data-category="cleaning" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-shield-halved"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">CAVITY CARE</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Restoration / Filling of Teeth</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">दांतों की फिलिंग (मसाला भरना / रेस्टोरेशन)</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Tooth-colored composite and high-strength restorations to repair cavities, decayed teeth, or minor chipped enamel seamlessly.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Natural Tooth-Colored Filling</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Stops Cavity Progression</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Painless Single-Visit Care</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('2. Restoration / Filling of Teeth')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 3. RCT, Post and Core -->
+      <div data-category="restorative" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-tooth"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">SAVE NATURAL TOOTH</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">RCT (Root Canal Treatment), Post and Core</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">रूट कैनाल इलाज (RCT), पोस्ट एंड कोर</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Painless Root Canal Treatment (RCT) to relieve deep tooth pain and infection, combined with Post and Core build-up to strengthen severely damaged teeth.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Relieves Severe Toothache</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Post & Core Reinforcement</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Saves Natural Tooth Root</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('3. RCT (Root Canal Treatment), Post and Core')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 4. Denture, Crown and Bridge -->
+      <div data-category="restorative" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-crown"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">TOOTH REPLACEMENT</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Denture (Fixed and Removable), Crown and Bridge</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">डेंचर (फिक्स्ड और रिमूवेबल), क्राउन और ब्रिज</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Custom-fitted Zirconia/Ceramic Crowns (Caps), Fixed Bridges, and comfortable Complete or Partial Removable Dentures to restore chewing and aesthetics.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Ceramic & Zirconia Crowns</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Fixed Dental Bridges</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Full & Partial Dentures</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('4. Denture (Fixed and Removable), Crown and Bridge')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 5. Dental Implant -->
+      <div data-category="restorative" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">PERMANENT SOLUTION</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Dental Implant</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">डेंटल इम्प्लांट (स्थायी फिक्स दांत)</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Advanced titanium dental implants that replace missing tooth roots permanently—looking, feeling, and functioning just like natural teeth.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Fixed Permanent Tooth</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Preserves Jawbone</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Natural Chewing Power</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('5. Implant (Dental Implants)')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 6. Ortho Treatment (Braces) -->
+      <div data-category="cosmetic" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-teeth-open"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">BRACES & ALIGNMENT</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Ortho Treatment (Correction of Irregular Teeth) Braces</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">ऑर्थोडॉन्टिक इलाज (टेढ़े-मेढ़े दांतों को सीधा करना / ब्रेसेस)</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Specialized Orthodontic braces (Metal, Ceramic, and Aligners) to straighten crooked, crowded, protruding, or gap teeth for children, teens, and adults.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Metal & Ceramic Braces</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Closes Tooth Gaps</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Corrects Bite & Alignment</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('6. Ortho Treatment (Correction of Irregular Teeth) Braces')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 7. Teeth Extraction -->
+      <div data-category="surgery" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-hand-holding-medical"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">SAFE ORAL SURGERY</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Teeth Extraction</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">दांत निकालना (सुरक्षित एवं दर्द रहित एक्सट्रैक्शन)</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Safe, sterile, and painless extraction of severely decayed, mobile, or impacted wisdom teeth under local anesthesia with complete post-care guidance.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Painless Local Anesthesia</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Wisdom Tooth Care</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Fast Healing Protocol</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('7. Teeth Extraction')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 8. Fracture Case -->
+      <div data-category="surgery" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-xl">
+              <i class="fa-solid fa-kit-medical"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-rose-50 text-rose-700 px-2.5 py-1 rounded-md">TRAUMA & EMERGENCY</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Fracture Case (Dental & Jaw Trauma)</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">फ्रैक्चर केस (दांत और जबड़े की चोट का इलाज)</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Expert management and stabilization of fractured teeth, avulsed teeth, and maxillofacial/jaw trauma resulting from road accidents, falls, or sports injuries.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Jaw Fracture Stabilization</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Broken Tooth Splinting</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Emergency Trauma Care</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('8. Fracture Case (Dental & Jaw Trauma Care)')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+
+      <!-- 9. Smile Design -->
+      <div data-category="cosmetic" class="treatment-card bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="w-11 h-11 rounded-xl bg-teal-50 text-tealBrand-600 flex items-center justify-center text-xl">
+              <i class="fa-regular fa-face-smile-beam"></i>
+            </span>
+            <span class="text-[11px] font-bold uppercase tracking-wider bg-teal-50 text-tealBrand-700 px-2.5 py-1 rounded-md">AESTHETIC DENTISTRY</span>
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Smile Design</h3>
+          <p class="hindi-text text-xs font-semibold text-tealBrand-700 mt-1">स्माइल डिज़ाइन (आकर्षक मुस्कान मेकओवर)</p>
+          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
+            Customized aesthetic smile makeover combining veneers, aesthetic bonding, tooth re-contouring, and shade enhancement for a radiant, confident smile.
+          </p>
+          <ul class="mt-4 space-y-1.5 text-xs font-medium text-slate-700">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Aesthetic Veneers & Bonding</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Gap & Shape Correction</li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-emerald-500"></i> Confident Radiant Smile</li>
+          </ul>
+        </div>
+        <button onclick="selectTreatmentForBooking('9. Smile Design')" class="mt-6 w-full bg-slate-900 hover:bg-tealBrand-600 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
+          <i class="fa-brands fa-whatsapp"></i> Book This Treatment
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Symptom Guide Section -->
+  <section id="symptom-guide" class="bg-slate-900 text-white py-14">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto space-y-2">
+        <span class="text-xs font-bold uppercase tracking-wider text-teal-400">INTERACTIVE DENTAL GUIDE</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold">Not Sure Which Treatment You Need?</h2>
+        <p class="text-slate-300 text-sm">
+          Click on the dental problem you are experiencing, and we will suggest the right treatment available at Usha Hospital.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3.5 mt-8">
+        <button onclick="showRecommendation('Scaling (Teeth Cleaning) & Polishing', 'Removes plaque, tartar, and surface stains while strengthening gums.', '1. Scaling (Teeth Cleaning) & Polishing')" class="text-left p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          <p class="font-bold text-sm text-teal-300">Yellow Teeth / Tartar / Bleeding Gums</p>
+          <p class="text-xs text-slate-300 mt-1">पीले दांत या मसूड़ों से खून आना</p>
+        </button>
+
+        <button onclick="showRecommendation('RCT (Root Canal Treatment), Post and Core', 'Relieves deep nerve pain/infection and saves your natural tooth.', '3. RCT (Root Canal Treatment), Post and Core')" class="text-left p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          <p class="font-bold text-sm text-teal-300">Severe Toothache / Deep Cavity</p>
+          <p class="text-xs text-slate-300 mt-1">तेज दांत दर्द या गहरा कीड़ा लगना</p>
+        </button>
+
+        <button onclick="showRecommendation('Denture, Crown & Bridge or Dental Implant', 'Replace missing teeth with fixed crowns, bridges, removable dentures, or permanent implants.', '4. Denture (Fixed and Removable), Crown and Bridge')" class="text-left p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          <p class="font-bold text-sm text-teal-300">Missing Teeth / Difficulty Chewing</p>
+          <p class="text-xs text-slate-300 mt-1">टूटे या गायब दांत लगवाना</p>
+        </button>
+
+        <button onclick="showRecommendation('Ortho Treatment (Correction of Irregular Teeth) Braces', 'Aligns crooked, crowded, or gap teeth using Metal/Ceramic Braces.', '6. Ortho Treatment (Correction of Irregular Teeth) Braces')" class="text-left p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          <p class="font-bold text-sm text-teal-300">Crooked / Irregular Teeth or Gap</p>
+          <p class="text-xs text-slate-300 mt-1">टेढ़े-मेढ़े या बाहर निकले दांत (Braces)</p>
+        </button>
+
+        <button onclick="showRecommendation('Fracture Case (Dental & Jaw Trauma)', 'Immediate care and stabilization for broken teeth or jaw injury.', '8. Fracture Case (Dental & Jaw Trauma Care)')" class="text-left p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          <p class="font-bold text-sm text-teal-300">Accident / Jaw or Dental Fracture</p>
+          <p class="text-xs text-slate-300 mt-1">चोट या दुर्घटना से जबड़े/दांत में फ्रैक्चर</p>
+        </button>
+
+        <button onclick="showRecommendation('Smile Design', 'Complete aesthetic makeover for a confident, bright smile.', '9. Smile Design')" class="text-left p-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 transition">
+          <p class="font-bold text-sm text-teal-300">Cosmetic Smile Makeover</p>
+          <p class="text-xs text-slate-300 mt-1">आकर्षक मुस्कान (Smile Design)</p>
+        </button>
+      </div>
+
+      <!-- Recommendation Output Box -->
+      <div class="mt-6 bg-tealBrand-800/80 border border-teal-600 rounded-2xl p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <div>
+          <span class="text-[11px] font-bold uppercase tracking-wider text-teal-300">RECOMMENDED TREATMENT BY DR. NIDHI PRABHAKAR</span>
+          <h3 id="recTitle" class="text-lg font-extrabold text-white mt-0.5">Scaling (Teeth Cleaning) & Polishing</h3>
+          <p id="recDesc" class="text-xs sm:text-sm text-teal-100 mt-1">Removes plaque, tartar, and surface stains while strengthening gums.</p>
+        </div>
+        <button id="recBookBtn" onclick="selectTreatmentForBooking('1. Scaling (Teeth Cleaning) & Polishing')" class="bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-5 py-2.5 rounded-xl text-xs sm:text-sm shrink-0 transition">
+          Book This Now →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Doctor Profile Section -->
+  <section id="doctor" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      <div class="lg:col-span-4">
+        <div class="bg-white rounded-2xl border border-slate-200 p-6 shadow-md text-center space-y-4">
+          <div class="w-24 h-24 rounded-full bg-teal-50 text-tealBrand-600 flex items-center justify-center text-4xl mx-auto border-2 border-teal-200">
+            <i class="fa-solid fa-user-doctor"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold text-slate-900">Dr. Nidhi Prabhakar</h3>
+            <p class="text-sm font-bold text-tealBrand-600">Dental Surgeon (BDS)</p>
+          </div>
+          <div class="text-left bg-slate-50 rounded-xl p-4 space-y-2.5 text-xs sm:text-sm border border-slate-100">
+            <p><i class="fa-solid fa-graduation-cap text-tealBrand-600 w-5"></i> <strong>Qualification:</strong> BDS (Dental Surgeon)</p>
+            <p><i class="fa-solid fa-hospital text-tealBrand-600 w-5"></i> <strong>Center:</strong> Usha Hospital, Ara</p>
+            <p><i class="fa-regular fa-clock text-tealBrand-600 w-5"></i> <strong>Timings:</strong> Mon–Sat (10 AM – 7 PM)</p>
+            <p><i class="fa-solid fa-phone text-tealBrand-600 w-5"></i> <strong>Contact:</strong> +91 9341591254</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-8 space-y-5">
+        <span class="text-xs font-bold uppercase tracking-wider text-tealBrand-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          DEDICATED DENTAL CARE IN ARA
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">
+          Committed to Painless Dentistry, Precision & Patient Comfort
+        </h2>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          <strong>Dr. Nidhi Prabhakar (BDS, Dental Surgeon)</strong> provides comprehensive oral healthcare at <strong>Usha Hospital, East of Katira Overbridge, Ara (802301)</strong>. Whether you need routine teeth cleaning and polishing, single/multiple sitting Root Canal Treatment (RCT), Post and Core build-up, Fixed or Removable Dentures, Dental Implants, Orthodontic Braces, or emergency Fracture & Trauma management, every procedure is carried out with strict sterilization protocols and gentle patient care.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-4 pt-2">
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-Pump-medical text-tealBrand-600"></i> Strict Sterilization & Hygiene
+            </h4>
+            <p class="text-xs text-slate-600 mt-1">Hospital-grade infection control and sterilized instruments for every patient.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-hand-holding-heart text-tealBrand-600"></i> Gentle & Pain-Minimized Procedures
+            </h4>
+            <p class="text-xs text-slate-600 mt-1">Patient-friendly approach for children, adults, and senior citizens.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i class="fa-solid fa-teeth text-tealBrand-600"></i> Complete Restorative & Ortho Care
+            </h4>
+            <p class="text-xs text-slate-600 mt-1">All treatments from fillings and crowns to implants, braces, and fracture care under one roof.</p>
+          </div>
+          <div class="bg-white p-4 rounded-xl border border-slate-200">
+            <h4 class="font-bold text-slate-900 text-sm flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-emerald-600"></i> Easy WhatsApp Appointment
+            </h4>
+            <p class="text-xs text-slate-600 mt-1">Book your slot directly via WhatsApp on <strong>9341591254</strong> to minimize waiting time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Appointment Booking Section -->
+  <section id="appointment" class="py-16 bg-teal-50/60 border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3 py-1 rounded-full">
+          <i class="fa-brands fa-whatsapp"></i> BOOK YOUR APPOINTMENT THROUGH WHATSAPP
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">
+          Schedule Your Visit with Dr. Nidhi Prabhakar
+        </h2>
+        <p class="text-slate-600 text-sm">
+          Fill in your details below and click <strong>"Book on WhatsApp"</strong> to send your appointment details directly to <strong>+91 9341591254</strong>.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Booking Form -->
+        <form id="bookingForm" onsubmit="sendWhatsAppBooking(event)" class="lg:col-span-7 bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">PATIENT NAME (मरीज़ का नाम) *</label>
+              <input type="text" id="patientName" required oninput="updateLivePreview()" placeholder="Enter full name" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">MOBILE NUMBER (मोबाइल नंबर) *</label>
+              <input type="tel" id="patientPhone" required oninput="updateLivePreview()" placeholder="10-digit mobile number" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">SELECT DENTAL TREATMENT (इलाज चुनें) *</label>
+            <select id="treatmentSelect" onchange="updateLivePreview()" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600 bg-white">
+              <option value="1. Scaling (Teeth Cleaning) & Polishing">1. Scaling (Teeth Cleaning) & Polishing</option>
+              <option value="2. Restoration / Filling of Teeth">2. Restoration / Filling of Teeth</option>
+              <option value="3. RCT (Root Canal Treatment), Post and Core">3. RCT (Root Canal Treatment), Post and Core</option>
+              <option value="4. Denture (Fixed and Removable), Crown and Bridge">4. Denture (Fixed and Removable), Crown and Bridge</option>
+              <option value="5. Implant (Dental Implants)">5. Implant (Dental Implants)</option>
+              <option value="6. Ortho Treatment (Correction of Irregular Teeth) Braces">6. Ortho Treatment (Correction of Irregular Teeth) Braces</option>
+              <option value="7. Teeth Extraction">7. Teeth Extraction</option>
+              <option value="8. Fracture Case (Dental & Jaw Trauma Care)">8. Fracture Case (Dental & Jaw Trauma Care)</option>
+              <option value="9. Smile Design">9. Smile Design</option>
+              <option value="10. General Dental Checkup & Consultation">10. General Dental Checkup & Consultation</option>
+            </select>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">PREFERRED DATE (तारीख) *</label>
+              <input type="date" id="preferredDate" required onchange="updateLivePreview()" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">PREFERRED TIME (10 AM – 7 PM) *</label>
+              <select id="preferredTime" onchange="updateLivePreview()" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600 bg-white">
+                <option value="Morning (10:00 AM - 12:00 PM)">Morning: 10:00 AM – 12:00 PM</option>
+                <option value="Afternoon (12:00 PM - 2:00 PM)">Afternoon: 12:00 PM – 2:00 PM</option>
+                <option value="Afternoon (2:00 PM - 4:00 PM)">Afternoon: 2:00 PM – 4:00 PM</option>
+                <option value="Evening (4:00 PM - 7:00 PM)">Evening: 4:00 PM – 7:00 PM</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">PROBLEM DESCRIPTION / NOTES (OPTIONAL)</label>
+            <textarea id="patientNotes" rows="2" oninput="updateLivePreview()" placeholder="E.g., toothache in lower molar, braces inquiry, scaling..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600"></textarea>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button type="submit" class="flex-1 bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              Book Appointment on WhatsApp (9341591254)
+            </button>
+            <button type="button" onclick="copyBookingMessage()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center gap-1.5">
+              <i class="fa-regular fa-copy"></i> Copy Message
+            </button>
+          </div>
+        </form>
+
+        <!-- Live WhatsApp Message Preview -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="bg-emerald-950 text-white rounded-2xl p-6 shadow-md space-y-4">
+            <div class="flex items-center justify-between border-b border-emerald-800 pb-3">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-brands fa-whatsapp text-2xl text-emerald-400"></i>
+                <div>
+                  <p class="font-bold text-sm">Dr. Nidhi Prabhakar - Usha Hospital</p>
+                  <p class="text-xs text-emerald-300">WhatsApp Booking: +91 9341591254</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-bold uppercase bg-emerald-800 text-emerald-200 px-2 py-0.5 rounded">Live Preview</span>
+            </div>
+
+            <pre id="whatsappPreview" class="bg-emerald-900/70 rounded-xl p-4 text-xs text-emerald-50 whitespace-pre-wrap font-sans leading-relaxed border border-emerald-800"></pre>
+
+            <p class="text-xs text-emerald-300 flex items-center justify-between">
+              <span><i class="fa-solid fa-lock"></i> Direct chat with Clinic (+91 9341591254)</span>
+              <span>Mon–Sat: 10 AM – 7 PM</span>
+            </p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 p-5 flex items-center justify-between">
+            <div>
+              <p class="text-xs font-bold uppercase text-slate-400">PREFER CALLING DIRECTLY?</p>
+              <p class="text-lg font-extrabold text-slate-900">+91 9341591254</p>
+              <p class="text-xs text-slate-500">Usha Hospital, East of Katira Overbridge, Ara</p>
+            </div>
+            <a href="tel:9341591254" class="bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold px-4 py-2.5 rounded-xl text-xs sm:text-sm transition">
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timings & Hospital Address Section -->
+  <section id="contact" class="py-16 max-w-7xl mx-auto px-4">
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Clinic Timings Card -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm">
+        <span class="text-xs font-bold uppercase tracking-wider text-tealBrand-600"><i class="fa-regular fa-clock"></i> OPD SCHEDULE</span>
+        <h3 class="text-2xl font-extrabold text-slate-900 mt-1 mb-5">Clinic Timings</h3>
+        <div class="divide-y divide-slate-100 text-sm">
+          <div class="py-3 flex justify-between"><span class="font-semibold">Monday (सोमवार)</span><span class="font-bold text-tealBrand-700">10:00 AM – 7:00 PM</span></div>
+          <div class="py-3 flex justify-between"><span class="font-semibold">Tuesday (मंगलवार)</span><span class="font-bold text-tealBrand-700">10:00 AM – 7:00 PM</span></div>
+          <div class="py-3 flex justify-between"><span class="font-semibold">Wednesday (बुधवार)</span><span class="font-bold text-tealBrand-700">10:00 AM – 7:00 PM</span></div>
+          <div class="py-3 flex justify-between"><span class="font-semibold">Thursday (गुरुवार)</span><span class="font-bold text-tealBrand-700">10:00 AM – 7:00 PM</span></div>
+          <div class="py-3 flex justify-between"><span class="font-semibold">Friday (शुक्रवार)</span><span class="font-bold text-tealBrand-700">10:00 AM – 7:00 PM</span></div>
+          <div class="py-3 flex justify-between"><span class="font-semibold">Saturday (शनिवार)</span><span class="font-bold text-tealBrand-700">10:00 AM – 7:00 PM</span></div>
+          <div class="py-3 flex justify-between"><span class="font-semibold text-slate-500">Sunday (रविवार)</span><span class="font-bold text-amber-600">PRIOR APPOINTMENT / EMERGENCY</span></div>
+        </div>
+      </div>
+
+      <!-- Address & Map Card -->
+      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm flex flex-col justify-between space-y-6">
+        <div class="space-y-4">
+          <span class="text-xs font-bold uppercase tracking-wider text-tealBrand-600"><i class="fa-solid fa-location-dot"></i> HOSPITAL ADDRESS & CONTACT</span>
+          <h3 class="text-2xl font-extrabold text-slate-900">Usha Hospital, Ara</h3>
+
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-1">
+            <p class="text-xs font-bold uppercase text-slate-400">DOCTOR & DEPARTMENT</p>
+            <p class="font-extrabold text-slate-900">Dr. Nidhi Prabhakar (BDS) — Dental Surgeon</p>
+            <p class="text-xs font-semibold text-tealBrand-700">PIN: 802301</p>
+          </div>
+
+          <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 space-y-1">
+            <p class="text-xs font-bold uppercase text-slate-400">LOCATION LANDMARK</p>
+            <p class="font-bold text-slate-900">Usha Hospital, East of Katira Overbridge</p>
+            <p class="text-sm text-slate-600">Ara, Bhojpur District, Bihar – 802301</p>
+            <p class="text-xs text-slate-500">(उषा हॉस्पिटल, कतीरा ओवरब्रिज के पूरब, आरा - 802301)</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-teal-50/70 p-3.5 rounded-xl border border-teal-100">
+              <p class="text-xs text-slate-500">Phone / Call</p>
+              <p class="font-extrabold text-slate-900">+91 9341591254</p>
+            </div>
+            <div class="bg-emerald-50/70 p-3.5 rounded-xl border border-emerald-100">
+              <p class="text-xs text-slate-500">WhatsApp Booking</p>
+              <p class="font-extrabold text-emerald-700">9341591254</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a href="https://www.google.com/maps/search/?api=1&query=Usha+Hospital+East+of+Katira+Overbridge+Ara+802301" target="_blank" class="flex-1 bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm transition">
+            <i class="fa-solid fa-map-location-dot mr-1"></i> Open in Google Maps
+          </a>
+          <button onclick="navigator.clipboard.writeText('Dr. Nidhi Prabhakar (BDS), Usha Hospital, East of Katira Overbridge, Ara, Bihar - 802301. Ph: 9341591254'); alert('Address copied!');" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm transition">
+            <i class="fa-regular fa-copy mr-1"></i> Copy Address
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+      <div class="space-y-3">
+        <h4 class="text-xl font-extrabold text-white">Dr. Nidhi Prabhakar</h4>
+        <p class="text-xs font-bold text-teal-400">Dental Surgeon (BDS) • Usha Hospital</p>
+        <p class="text-xs text-slate-400 leading-relaxed">
+          Complete dental care including Scaling & Polishing, Tooth Restoration, Root Canal (RCT), Crown & Bridge, Dental Implants, Ortho Braces, Extraction, Fracture Cases, and Smile Design.
+        </p>
+      </div>
+
+      <div>
+        <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-3">AVAILABLE TREATMENTS</h5>
+        <ul class="grid grid-cols-2 gap-1.5 text-xs text-slate-400">
+          <li>• Scaling & Polishing</li>
+          <li>• Tooth Restoration / Filling</li>
+          <li>• RCT, Post and Core</li>
+          <li>• Denture (Fixed & Removable)</li>
+          <li>• Crown, Bridge & Implant</li>
+          <li>• Ortho Treatment (Braces)</li>
+          <li>• Teeth Extraction</li>
+          <li>• Fracture Case & Smile Design</li>
+        </ul>
+      </div>
+
+      <div class="space-y-2 text-xs">
+        <h5 class="text-xs font-bold uppercase tracking-wider text-white mb-3">VISIT USHA HOSPITAL</h5>
+        <p><i class="fa-solid fa-location-dot text-teal-400 mr-1.5"></i> Usha Hospital, East of Katira Overbridge, Ara, Bihar - 802301</p>
+        <p><i class="fa-regular fa-clock text-teal-400 mr-1.5"></i> Monday to Saturday: 10:00 AM – 7:00 PM</p>
+        <p class="text-sm font-bold text-emerald-400 pt-1"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp / Call: +91 9341591254</p>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+      © 2026 Dr. Nidhi Prabhakar (BDS) – Usha Hospital, Ara (802301). All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919341591254?text=Hello%20Dr.%20Nidhi%20Prabhakar%20(Usha%20Hospital%2C%20Ara)%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="fixed bottom-5 right-5 z-50 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-3 rounded-full shadow-lg flex items-center gap-2 text-xs sm:text-sm transition">
+    <i class="fa-brands fa-whatsapp text-lg"></i>
+    <span>WhatsApp: 9341591254</span>
+  </a>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Set default date to tomorrow
+    window.addEventListener('DOMContentLoaded', () => {
+      const dateInput = document.getElementById('preferredDate');
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      dateInput.value = tomorrow.toISOString().split('T')[0];
+      updateLivePreview();
+    });
+
+    // Filter Treatments by Category
+    function filterTreatments(category, btnElement) {
+      const cards = document.querySelectorAll('.treatment-card');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-tealBrand-600', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700');
+      });
+      btnElement.classList.remove('bg-white', 'text-slate-700');
+      btnElement.classList.add('bg-tealBrand-600', 'text-white');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Symptom Recommendation Updater
+    function showRecommendation(title, desc, selectVal) {
+      document.getElementById('recTitle').textContent = title;
+      document.getElementById('recDesc').textContent = desc;
+      document.getElementById('recBookBtn').setAttribute('onclick', `selectTreatmentForBooking('${selectVal}')`);
+    }
+
+    // Pre-fill Treatment in Booking Form and Scroll
+    function selectTreatmentForBooking(treatmentName) {
+      const select = document.getElementById('treatmentSelect');
+      select.value = treatmentName;
+      updateLivePreview();
+      document.getElementById('appointment').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Build WhatsApp Message Text
+    function buildWhatsAppMessage() {
+      const name = document.getElementById('patientName').value.trim() || '[Your Name]';
+      const phone = document.getElementById('patientPhone').value.trim() || '[Your Mobile No.]';
+      const treatment = document.getElementById('treatmentSelect').value.replace(/^\d+\.\s*/, '');
+      const date = document.getElementById('preferredDate').value || 'Not specified';
+      const time = document.getElementById('preferredTime').value;
+      const notes = document.getElementById('patientNotes').value.trim();
+
+      let msg = `Hello *Dr. Nidhi Prabhakar* (Usha Hospital, Ara),\nI would like to book a dental appointment:\n\n`;
+      msg += `• *Patient Name:* ${name}\n`;
+      msg += `• *Phone:* ${phone}\n`;
+      msg += `• *Treatment:* ${treatment}\n`;
+      msg += `• *Preferred Date:* ${date}\n`;
+      msg += `• *Preferred Time:* ${time}\n`;
+      if (notes) {
+        msg += `• *Notes:* ${notes}\n`;
+      }
+      msg += `\n📍 *Clinic:* Usha Hospital, East of Katira Overbridge, Ara - 802301`;
+      return msg;
+    }
+
+    function updateLivePreview() {
+      document.getElementById('whatsappPreview').textContent = buildWhatsAppMessage();
+    }
+
+    function sendWhatsAppBooking(event) {
+      event.preventDefault();
+      const message = encodeURIComponent(buildWhatsAppMessage());
+      window.open(`https://wa.me/919341591254?text=${message}`, '_blank');
+    }
+
+    function copyBookingMessage() {
+      navigator.clipboard.writeText(buildWhatsAppMessage());
+      alert('Appointment message copied to clipboard!');
+    }
+
+    function toggleHindiHighlight() {
+      document.querySelectorAll('.hindi-text').forEach(el => {
+        el.classList.toggle('text-base');
+        el.classList.toggle('bg-yellow-50');
+        el.classList.toggle('px-2');
+        el.classList.toggle('py-0.5');
+        el.classList.toggle('rounded');
+      });
+    }
+  </script>
+</body>
+</html>
