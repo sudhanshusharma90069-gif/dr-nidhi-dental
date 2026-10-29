@@ -87,9 +87,13 @@
       </nav>
 
       <div class="flex items-center gap-2.5">
-        <button id="langToggleBtn" onclick="toggleHindiHighlight()" class="px-3 py-2 rounded-lg border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
-          <i class="fa-solid fa-language text-tealBrand-600"></i> हिंदी / EN
+        <button id="langToggleBtn" onclick="toggleLanguage()" class="px-3 py-2 rounded-lg border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-language text-tealBrand-600"></i> <span id="langBtnText">हिंदी</span>
         </button>
+        <a href="https://www.instagram.com/drnidhiprabhakar" target="_blank" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+          <i class="fa-brands fa-instagram text-base"></i>
+          <span class="hidden sm:inline">Instagram</span>
+        </a>
         <a href="#appointment" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
           <i class="fa-brands fa-whatsapp text-base"></i>
           <span>Book Appointment</span>
@@ -826,6 +830,7 @@
         <p><i class="fa-solid fa-location-dot text-teal-400 mr-1.5"></i> Usha Hospital, East of Katira Overbridge, Ara, Bihar - 802301</p>
         <p><i class="fa-regular fa-clock text-teal-400 mr-1.5"></i> Monday to Saturday: 10:00 AM – 7:00 PM</p>
         <p class="text-sm font-bold text-emerald-400 pt-1"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp / Call: +91 9341591254</p>
+        <p class="text-sm font-bold text-pink-400 pt-1"><i class="fa-brands fa-instagram mr-1"></i> <a href="https://www.instagram.com/drnidhiprabhakar" target="_blank" class="hover:text-pink-300 transition">Follow on Instagram</a></p>
       </div>
     </div>
 
@@ -842,13 +847,18 @@
 
   <!-- Interactive Scripts -->
   <script>
-    // Set default date to tomorrow
+    // Set default date to tomorrow and initialize Hindi text
     window.addEventListener('DOMContentLoaded', () => {
       const dateInput = document.getElementById('preferredDate');
       const tomorrow = new Date();
       tomorrow.setDate(tomorrow.getDate() + 1);
       dateInput.value = tomorrow.toISOString().split('T')[0];
       updateLivePreview();
+
+      // Hide Hindi text by default
+      document.querySelectorAll('.hindi-text').forEach(el => {
+        el.style.display = 'none';
+      });
     });
 
     // Filter Treatments by Category
@@ -924,15 +934,26 @@
       alert('Appointment message copied to clipboard!');
     }
 
-    function toggleHindiHighlight() {
-      document.querySelectorAll('.hindi-text').forEach(el => {
-        el.classList.toggle('text-base');
-        el.classList.toggle('bg-yellow-50');
-        el.classList.toggle('px-2');
-        el.classList.toggle('py-0.5');
-        el.classList.toggle('rounded');
-      });
+    let isHindi = false;
+
+    function toggleLanguage() {
+      isHindi = !isHindi;
+      const langBtnText = document.getElementById('langBtnText');
+      const hindiTexts = document.querySelectorAll('.hindi-text');
+
+      if (isHindi) {
+        langBtnText.textContent = 'English';
+        hindiTexts.forEach(el => {
+          el.style.display = 'block';
+        });
+      } else {
+        langBtnText.textContent = 'हिंदी';
+        hindiTexts.forEach(el => {
+          el.style.display = 'none';
+        });
+      }
     }
+
   </script>
 </body>
 </html>
