@@ -92,6 +92,7 @@
         <a href="#treatments" class="hover:text-tealBrand-600 transition"><span class="lang-en">Treatments (9)</span><span class="lang-hindi">इलाज (9)</span></a>
         <a href="#symptom-guide" class="hover:text-tealBrand-600 transition"><span class="lang-en">Symptom Guide</span><span class="lang-hindi">लक्षण गाइड</span></a>
         <a href="#doctor" class="hover:text-tealBrand-600 transition"><span class="lang-en">Doctor Profile</span><span class="lang-hindi">डॉक्टर की जानकारी</span></a>
+        <a href="#feedback" class="hover:text-tealBrand-600 transition"><span class="lang-en">Feedback</span><span class="lang-hindi">प्रतिक्रिया</span></a>
         <a href="#contact" class="hover:text-tealBrand-600 transition"><span class="lang-en">Timings & Address</span><span class="lang-hindi">समय और पता</span></a>
       </nav>
 
@@ -642,6 +643,110 @@
     </div>
   </section>
 
+  <!-- Patient Feedback Section -->
+  <section id="feedback" class="py-16 bg-gradient-to-br from-slate-50 to-teal-50/50">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-tealBrand-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
+          <i class="fa-solid fa-comment-dots"></i> PATIENT FEEDBACK
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900">
+          <span class="lang-en">Share Your Experience</span>
+          <span class="lang-hindi">अपना अनुभव साझा करें</span>
+        </h2>
+        <p class="text-slate-600 text-sm">
+          <span class="lang-en">Help us improve our services by sharing your feedback about dental care, cleanliness, and hospital facilities.</span>
+          <span class="lang-hindi">दंत चिकित्सा, सफाई और अस्पताल सुविधाओं के बारे में अपनी प्रतिक्रिया साझा करकर हमें अपनी सेवाओं को बेहतर बनाने में मदद करें।</span>
+        </p>
+      </div>
+
+      <div class="flex justify-center">
+        <form id="feedbackForm" onsubmit="submitFeedback(event)" class="w-full max-w-2xl bg-white rounded-2xl border border-slate-200 p-6 sm:p-8 shadow-sm space-y-5">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                <span class="lang-en">YOUR NAME (आपका नाम) *</span>
+                <span class="lang-hindi">आपका नाम (YOUR NAME) *</span>
+              </label>
+              <input type="text" id="feedbackName" required placeholder="Enter your name" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600" />
+            </div>
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+                <span class="lang-en">MOBILE NUMBER (मोबाइल नंबर) *</span>
+                <span class="lang-hindi">मोबाइल नंबर (MOBILE NUMBER) *</span>
+              </label>
+              <input type="tel" id="feedbackPhone" required placeholder="10-digit mobile number" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+              <span class="lang-en">TEETH CLEANLINESS EXPERIENCE (दांतों की सफाई का अनुभव)</span>
+              <span class="lang-hindi">दांतों की सफाई का अनुभव (TEETH CLEANLINESS EXPERIENCE)</span>
+            </label>
+            <select id="feedbackCleanliness" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600 bg-white">
+              <option value="">Select option / विकल्प चुनें</option>
+              <option value="Excellent">Excellent / उत्कृष्ट</option>
+              <option value="Good">Good / अच्छा</option>
+              <option value="Average">Average / औसत</option>
+              <option value="Needs Improvement">Needs Improvement / सुधार की आवश्यकता</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+              <span class="lang-en">DENTAL SERVICES RATING (दंत सेवाओं की रेटिंग)</span>
+              <span class="lang-hindi">दंत सेवाओं की रेटिंग (DENTAL SERVICES RATING)</span>
+            </label>
+            <select id="feedbackServices" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600 bg-white">
+              <option value="">Select rating / रेटिंग चुनें</option>
+              <option value="5 Stars">5 Stars - Very Satisfied / 5 सितारे - बहुत संतुष्ट</option>
+              <option value="4 Stars">4 Stars - Satisfied / 4 सितारे - संतुष्ट</option>
+              <option value="3 Stars">3 Stars - Neutral / 3 सितारे - सामान्य</option>
+              <option value="2 Stars">2 Stars - Dissatisfied / 2 सितारे - असंतुष्ट</option>
+              <option value="1 Star">1 Star - Very Dissatisfied / 1 सितारा - बहुत असंतुष्ट</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+              <span class="lang-en">ABOUT HOSPITAL FACILITIES (अस्पताल सुविधाओं के बारे में)</span>
+              <span class="lang-hindi">अस्पताल सुविधाओं के बारे में (ABOUT HOSPITAL FACILITIES)</span>
+            </label>
+            <select id="feedbackHospital" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600 bg-white">
+              <option value="">Select option / विकल्प चुनें</option>
+              <option value="Excellent">Excellent / उत्कृष्ट</option>
+              <option value="Good">Good / अच्छा</option>
+              <option value="Average">Average / औसत</option>
+              <option value="Needs Improvement">Needs Improvement / सुधार की आवश्यकता</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-slate-700 mb-1.5">
+              <span class="lang-en">SUGGESTIONS FOR IMPROVEMENT (सुधार के लिए सुझाव)</span>
+              <span class="lang-hindi">सुधार के लिए सुझाव (SUGGESTIONS FOR IMPROVEMENT)</span>
+            </label>
+            <textarea id="feedbackSuggestions" rows="3" placeholder="Share your suggestions... / अपने सुझाव साझा करें..." class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm focus:outline-none focus:border-tealBrand-600"></textarea>
+          </div>
+
+          <div class="flex flex-wrap gap-3 pt-2">
+            <button type="submit" class="flex-1 bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold py-3.5 px-6 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span class="lang-en">Submit Feedback</span>
+              <span class="lang-hindi">प्रतिक्रिया भेजें</span>
+            </button>
+            <button type="button" onclick="resetFeedbackForm()" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3.5 px-4 rounded-xl text-xs sm:text-sm transition flex items-center gap-1.5">
+              <i class="fa-solid fa-rotate-right"></i>
+              <span class="lang-en">Reset</span>
+              <span class="lang-hindi">रीसेट</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
   <!-- WhatsApp Appointment Booking Section -->
   <section id="appointment" class="py-16 bg-teal-50/60 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4">
@@ -926,6 +1031,33 @@
         langBtnText.textContent = 'हिंदी';
         body.classList.remove('hindi-mode');
       }
+    }
+
+    // Feedback Form Functions
+    function submitFeedback(event) {
+      event.preventDefault();
+      const name = document.getElementById('feedbackName').value;
+      const phone = document.getElementById('feedbackPhone').value;
+      const cleanliness = document.getElementById('feedbackCleanliness').value;
+      const services = document.getElementById('feedbackServices').value;
+      const hospital = document.getElementById('feedbackHospital').value;
+      const suggestions = document.getElementById('feedbackSuggestions').value;
+
+      let feedbackMsg = `Hello Dr. Nidhi Prabhakar (Usha Hospital, Ara),\n\nI would like to share my feedback:\n\n`;
+      feedbackMsg += `• *Name:* ${name}\n`;
+      feedbackMsg += `• *Phone:* ${phone}\n`;
+      if (cleanliness) feedbackMsg += `• *Teeth Cleanliness Experience:* ${cleanliness}\n`;
+      if (services) feedbackMsg += `• *Dental Services Rating:* ${services}\n`;
+      if (hospital) feedbackMsg += `• *Hospital Facilities:* ${hospital}\n`;
+      if (suggestions) feedbackMsg += `• *Suggestions:* ${suggestions}\n`;
+      feedbackMsg += `\n📍 *Clinic:* Usha Hospital, East of Katira Overbridge, Ara - 802301`;
+
+      const message = encodeURIComponent(feedbackMsg);
+      window.open(`https://wa.me/919341591254?text=${message}`, '_blank');
+    }
+
+    function resetFeedbackForm() {
+      document.getElementById('feedbackForm').reset();
     }
 
   </script>
