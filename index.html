@@ -72,8 +72,8 @@
 
   <!-- Main Navigation Bar -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
-    <div class="max-w-7xl mx-auto px-4 py-3.5 flex items-center justify-between gap-4">
-      <a href="#home" class="flex items-center gap-3">
+    <div class="max-w-7xl mx-auto px-4 py-3 sm:py-3.5 flex flex-wrap sm:flex-nowrap items-center justify-between gap-x-4 gap-y-2.5">
+      <a href="#home" class="flex items-center gap-3 min-w-0">
         <div class="w-11 h-11 rounded-xl bg-tealBrand-600 text-white flex items-center justify-center text-xl shadow-sm">
           <i class="fa-solid fa-tooth"></i>
         </div>
@@ -96,23 +96,23 @@
         <a href="#contact" class="hover:text-tealBrand-600 transition"><span class="lang-en">Timings & Address</span><span class="lang-hindi">समय और पता</span></a>
       </nav>
 
-      <div class="flex items-center gap-2.5">
-        <button id="langToggleBtn" onclick="toggleLanguage()" class="px-3 py-2 rounded-lg border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
+      <div class="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2.5 w-full sm:w-auto">
+        <button id="langToggleBtn" onclick="toggleLanguage()" class="px-2.5 sm:px-3 py-2 rounded-lg border border-slate-200 text-xs sm:text-sm font-semibold text-slate-700 hover:bg-slate-100 transition flex items-center gap-1.5">
           <i class="fa-solid fa-language text-tealBrand-600"></i> <span id="langBtnText">हिंदी</span>
         </button>
-        <a href="https://www.instagram.com/drnidhiprabhakar" target="_blank" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+        <a href="https://www.instagram.com/drnidhiprabhakar" target="_blank" rel="noopener noreferrer" class="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
           <i class="fa-brands fa-instagram text-base"></i>
           <span class="hidden sm:inline">Instagram</span>
         </a>
-        <a href="#feedback" class="bg-tealBrand-600 hover:bg-tealBrand-700 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
-          <i class="fa-solid fa-comment-dots text-base"></i>
+        <a href="#feedback" class="bg-tealBrand-600 hover:bg-tealBrand-700 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+          <i class="fa-solid fa-comment-dots text-base hidden sm:inline-block"></i>
           <span class="lang-en">Feedback</span>
           <span class="lang-hindi">प्रतिक्रिया</span>
         </a>
-        <a href="#appointment" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+        <a href="#appointment" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs sm:text-sm font-bold px-3 sm:px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
           <i class="fa-brands fa-whatsapp text-base"></i>
-          <span class="lang-en">Book Appointment</span>
-          <span class="lang-hindi">अपॉइंटमेंट बुक करें</span>
+          <span class="lang-en">Book<span class="hidden sm:inline"> Appointment</span></span>
+          <span class="lang-hindi"><span class="hidden sm:inline">अपॉइंटमेंट </span>बुक करें</span>
         </a>
       </div>
     </div>
@@ -258,7 +258,7 @@
             </div>
           </div>
 
-          <a href="https://wa.me/919341591254?text=Hello%20Dr.%20Nidhi%20Prabhakar%20(Usha%20Hospital%2C%20Ara)%2C%20I%20want%20to%20book%20a%20dental%20appointment." target="_blank" class="w-full bg-tealBrand-700 hover:bg-tealBrand-800 text-white font-bold py-3 px-4 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
+          <a href="https://wa.me/919341591254?text=Hello%20Dr.%20Nidhi%20Prabhakar%20(Usha%20Hospital%2C%20Ara)%2C%20I%20want%20to%20book%20a%20dental%20appointment." target="_blank" rel="noopener noreferrer" class="w-full bg-tealBrand-700 hover:bg-tealBrand-800 text-white font-bold py-3 px-4 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
             <i class="fa-brands fa-whatsapp text-lg"></i>
             Quick WhatsApp Message to 9341591254
           </a>
@@ -882,7 +882,7 @@
         </div>
 
         <div class="flex flex-wrap gap-3">
-          <a href="https://www.google.com/maps/search/?api=1&query=Usha+Hospital+East+of+Katira+Overbridge+Ara+802301" target="_blank" class="flex-1 bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm transition">
+          <a href="https://www.google.com/maps/search/?api=1&query=Usha+Hospital+East+of+Katira+Overbridge+Ara+802301" target="_blank" rel="noopener noreferrer" class="flex-1 bg-tealBrand-600 hover:bg-tealBrand-700 text-white font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm transition">
             <i class="fa-solid fa-map-location-dot mr-1"></i> Open in Google Maps
           </a>
           <button onclick="navigator.clipboard.writeText('Dr. Nidhi Prabhakar (BDS), Usha Hospital, East of Katira Overbridge, Ara, Bihar - 802301. Ph: 9341591254'); alert('Address copied!');" class="bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold py-3 px-4 rounded-xl text-xs sm:text-sm transition">
@@ -923,7 +923,7 @@
         <p><i class="fa-solid fa-location-dot text-teal-400 mr-1.5"></i> Usha Hospital, East of Katira Overbridge, Ara, Bihar - 802301</p>
         <p><i class="fa-regular fa-clock text-teal-400 mr-1.5"></i> Monday to Saturday: 10:00 AM – 7:00 PM</p>
         <p class="text-sm font-bold text-emerald-400 pt-1"><i class="fa-brands fa-whatsapp mr-1"></i> WhatsApp / Call: +91 9341591254</p>
-        <p class="text-sm font-bold text-pink-400 pt-1"><i class="fa-brands fa-instagram mr-1"></i> <a href="https://www.instagram.com/drnidhiprabhakar" target="_blank" class="hover:text-pink-300 transition">Follow on Instagram</a></p>
+        <p class="text-sm font-bold text-pink-400 pt-1"><i class="fa-brands fa-instagram mr-1"></i> <a href="https://www.instagram.com/drnidhiprabhakar" target="_blank" rel="noopener noreferrer" class="hover:text-pink-300 transition">Follow on Instagram</a></p>
         <div class="mt-4 pt-4 border-t border-slate-800">
           <p class="text-[10px] font-bold uppercase text-slate-400 mb-2">SCAN TO VISIT WEBSITE</p>
           <a href="https://dr-nidhi-dental.vercel.app/" title="Visit Website" class="bg-white p-2 rounded-lg inline-block hover:opacity-90 transition">
@@ -939,7 +939,7 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919341591254?text=Hello%20Dr.%20Nidhi%20Prabhakar%20(Usha%20Hospital%2C%20Ara)%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="fixed bottom-5 right-5 z-50 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-3 rounded-full shadow-lg flex items-center gap-2 text-xs sm:text-sm transition">
+  <a href="https://wa.me/919341591254?text=Hello%20Dr.%20Nidhi%20Prabhakar%20(Usha%20Hospital%2C%20Ara)%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-50 bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-4 py-3 rounded-full shadow-lg flex items-center gap-2 text-xs sm:text-sm transition">
     <i class="fa-brands fa-whatsapp text-lg"></i>
     <span>WhatsApp: 9341591254</span>
   </a>
